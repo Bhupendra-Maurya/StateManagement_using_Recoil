@@ -1,13 +1,12 @@
-import React from 'react'
-import { RecoilRoot } from 'recoil'
-import Counter from './components/Counter'
+import React from "react";
+import RecoilProvider from "./components/RecoilProvider";
 
 const App = () => {
   return (
-    <RecoilRoot>
-      <Counter/>
-    </RecoilRoot>
-  )
-}
+    <>
+      <RecoilProvider />
+    </>
+  );
+};
 
-export default App
+export default App;

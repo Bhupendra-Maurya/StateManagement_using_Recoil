@@ -1,9 +1,8 @@
 import React from "react";
 import { useRecoilValue, useSetRecoilState } from "recoil";
-import counterAtom, {
-  counterSelector,
-  evenSelector,
-} from "../store/atoms/CounterState";
+import counterAtom from "../store/atoms/counterAtom.js";
+import { counterSelector } from "../store/selectors/counterSelector.js";
+import { evenSelector } from "../store/selectors/evenSelector.js";
 
 const Counter = () => {
   const count = useRecoilValue(counterAtom);
